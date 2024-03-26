@@ -47,13 +47,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 `;
 
 const Container2 = styled.div`
   display: flex;
   justify-content: center;
-  height: 100vh;
 `;
 
 const KakaoAdfitDiv1 = styled.div`
