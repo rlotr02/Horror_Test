@@ -15,7 +15,7 @@ const LoadingPage: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setPage(3);
-    }, 3800);
+    }, 3500);
     const frequencies: { [key: string]: number } = result
       .split(',')
       .reduce((acc: { [key: string]: number }, curr) => {
@@ -53,19 +53,19 @@ const LoadingPage: React.FC = () => {
           src={RightHand}
           alt="손"
           style={{ top: 50, right: 0 }}
-          $delay="500ms"
+          $delay="200ms"
         />
         <Img
           src={LeftHand}
           alt="손"
           style={{ top: 120, left: 0 }}
-          $delay="1s"
+          $delay="800ms"
         />
         <Img
           src={RightHand}
           alt="손"
           style={{ top: 350, right: 0 }}
-          $delay="1500ms"
+          $delay="1400ms"
         />
         <Img
           src={LeftHand}
