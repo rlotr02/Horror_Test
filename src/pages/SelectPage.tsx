@@ -45,7 +45,7 @@ const SelectPage: React.FC = () => {
               })}
           />
           <QuestBtn
-            onClick={() => onButtonClick(QuestionJson[num].answers[0].type)}
+            onClick={() => onButtonClick(QuestionJson[num].answers[1].type)}
             text={QuestionJson[num].answers[1].answer
               .split('\n')
               .map((data, index) => {
