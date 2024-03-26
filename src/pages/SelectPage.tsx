@@ -5,6 +5,7 @@ import QuestBtn from '../components/QuestBtn';
 import Background from '../assets/images/bg.png';
 import { useRecoilState, useSetRecoilState } from 'recoil';
 import { pageState, resultState } from '../assets/recoil';
+import KakaoAdfit3 from '../assets/KakaoAdfit/KakaoAdfit3';
 
 const SelectPage: React.FC = () => {
   const [num, setNum] = useState(0);
@@ -52,6 +53,7 @@ const SelectPage: React.FC = () => {
               })}
           />
         </QuestBtns>
+        <KakaoAdfit3 />
       </div>
     </Container>
   );

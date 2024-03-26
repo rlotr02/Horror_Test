@@ -4,6 +4,7 @@ import { useSetRecoilState } from 'recoil';
 import { pageState } from '../assets/recoil';
 import Button from '../components/Button';
 import Background from '../assets/images/bg.png';
+import KakaoAdfit3 from '../assets/KakaoAdfit/KakaoAdfit3';
 
 const StartPage: React.FC = () => {
   const setPage = useSetRecoilState(pageState);
@@ -22,6 +23,7 @@ const StartPage: React.FC = () => {
           onAni={true}
           onClick={() => setPage(1)}
         />
+        <KakaoAdfit3 />
       </div>
     </Container>
   );
@@ -73,3 +75,5 @@ const Container = styled.div`
     -webkit-text-stroke: 1px #000000;
   }
 `;
+
+

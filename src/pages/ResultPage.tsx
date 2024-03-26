@@ -7,6 +7,7 @@ import Hand from '../assets/images/hand.png';
 import Button from '../components/Button';
 import Bg from '../assets/images/bg.png';
 import { RESULT_IMAGES } from '../assets/image';
+import KakaoAdfit3 from '../assets/KakaoAdfit/KakaoAdfit3';
 
 const ResultPage: React.FC = () => {
   const result = useRecoilValue(resultNumState);
@@ -60,6 +61,7 @@ const ResultPage: React.FC = () => {
           onAni={false}
           onClick={() => setPage(0)}
         />
+        <KakaoAdfit3 />
       </div>
     </Container>
   );
