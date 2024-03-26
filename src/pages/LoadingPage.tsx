@@ -14,7 +14,7 @@ const LoadingPage: React.FC = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setPage(3);
+      //setPage(3);
     }, 3800);
     const frequencies: { [key: string]: number } = result
       .split(',')
@@ -104,19 +104,17 @@ const Container = styled.div`
   > div {
     position: relative;
     height: 100%;
+    width: 100%;
 
     @media screen and (min-width: 500px) {
       width: 500px;
-    }
-
-    > img {
-      position: absolute;
-      width: 200px;
     }
   }
 `;
 
 const Img = styled.img<{ $delay: string }>`
+  position: absolute;
+  width: 200px;
   opacity: 0;
   display: flex;
   justify-content: center;
