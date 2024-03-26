@@ -44,16 +44,12 @@ const Container = styled.div`
   > img {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: -1;
     width: 100%;
     height: auto;
 
-    @media screen and (min-width: 750px) {
-      width: 750px;
-      left: 50%;
-      transform: translateX(-50%);
+    @media screen and (min-width: 500px) {
+      width: 500px;
     }
   }
 

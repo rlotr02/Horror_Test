@@ -15,7 +15,7 @@ const Button: React.FC<TButtonProps> = ({ text, onAni, ...props }) => {
   }, []);
 
   return (
-    <Btn {...props} speed={speed} ani={onAni}>
+    <Btn {...props} speed={speed} $ani={onAni}>
       {text}
     </Btn>
   );
@@ -29,7 +29,7 @@ const blinkAnimation = keyframes`
   }
 `;
 
-const Btn = styled.button<{ speed: number; ani: boolean }>`
+const Btn = styled.button<{ speed: number; $ani: boolean }>`
   width: 228px;
   height: 58px;
   background-color: #a63333;
@@ -40,7 +40,7 @@ const Btn = styled.button<{ speed: number; ani: boolean }>`
 
   transition: all 0.2s ease;
   ${(props) =>
-    props.ani &&
+    props.$ani &&
     css`
       animation: ${blinkAnimation} ${props.speed}s linear infinite;
     `}

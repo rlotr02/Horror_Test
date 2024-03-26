@@ -5,7 +5,12 @@ export const pageState = atom<number>({
   default: 0,
 });
 
-export const resultState = atom<number>({
+export const resultState = atom<string>({
   key: 'resultState',
+  default: '',
+});
+
+export const resultNumState = atom<number>({
+  key: 'resultNumState',
   default: 0,
 });

@@ -4,6 +4,7 @@ import { pageState } from './assets/recoil';
 import StartPage from './pages/StartPage';
 import SelectPage from './pages/SelectPage';
 import ResultPage from './pages/ResultPage';
+import LoadingPage from './pages/LoadingPage';
 
 const App: React.FC = () => {
   const page = useRecoilValue(pageState);
@@ -12,7 +13,8 @@ const App: React.FC = () => {
     <>
       {page === 0 && <StartPage />}
       {page === 1 && <SelectPage />}
-      {page === 2 && <ResultPage />}
+      {page === 2 && <LoadingPage />}
+      {page === 3 && <ResultPage />}
     </>
   );
 };
