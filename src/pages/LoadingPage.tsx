@@ -14,7 +14,7 @@ const LoadingPage: React.FC = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      //setPage(3);
+      setPage(3);
     }, 3800);
     const frequencies: { [key: string]: number } = result
       .split(',')
