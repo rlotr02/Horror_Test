@@ -23,6 +23,13 @@ const StartPage: React.FC = () => {
           onAni={true}
           onClick={() => setPage(1)}
         />
+        <GithubA
+          href="https://github.com/rlotr02"
+          target="_blank"
+          rel="noreferrer"
+        >
+          ⓒ 2024. rlotr02 All rights reserved.
+        </GithubA>
         <KakaoAdfit3 />
       </div>
     </Container>
@@ -76,4 +83,12 @@ const Container = styled.div`
   }
 `;
 
-
+const GithubA = styled.a`
+  display: flex;
+  justify-content: center;
+  font-family: 'Hanalei Fill';
+  font-size: 12px;
+  color: #903030;
+  margin-top: 5px;
+  text-decoration: none;
+`;
